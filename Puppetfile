@@ -64,5 +64,10 @@ github "xquartz",     "1.2.1"
 github "ohmyzsh",      "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 github "dropbox", "1.4.1"
 github "hipchat", "1.1.3"
+github "iterm2", "1.2.4"
+github "alfred", "1.4.0"
+github "tmux", "1.0.2"
+github "evernote", "2.0.4"
+github "java", "1.8.2"
 
 
