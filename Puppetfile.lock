@@ -114,6 +114,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.3.0)
@@ -157,6 +162,16 @@ GITHUBTARBALL
   remote: boxen/puppet-tmux
   specs:
     tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tunnelblick
+  specs:
+    tunnelblick (1.0.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-xpdf
+  specs:
+    xpdf (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -210,6 +225,7 @@ DEPENDENCIES
   nodejs (= 4.0.0)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
+  osx (= 2.8.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   repository (= 2.3.0)
@@ -220,5 +236,7 @@ DEPENDENCIES
   sublime_text (= 1.1.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
+  tunnelblick (= 1.0.7)
+  xpdf (= 1.0.1)
   xquartz (= 1.2.1)
 

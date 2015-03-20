@@ -77,3 +77,7 @@ github "keepassx", "1.0.0"
 github "sublime_text", "1.1.0"
 github "spotify", "1.0.2"
 github "skype", "1.1.0"
+github "osx", "2.8.0"
+github "xpdf", "1.0.1"
+github "tunnelblick", "1.0.7"
+
