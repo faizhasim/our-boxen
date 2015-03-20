@@ -70,5 +70,10 @@ github "tmux", "1.0.2"
 github "evernote", "2.0.4"
 github "java", "1.8.2"
 github "chrome", "1.2.0"
-
-
+github "firefox", "1.2.3"
+github "gpgtools", "1.0.4"
+github "intellij", "1.5.1"
+github "keepassx", "1.0.0"
+github "sublime_text", "1.1.0"
+github "spotify", "1.0.2"
+github "skype", "1.1.0"
