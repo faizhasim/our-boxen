@@ -69,5 +69,6 @@ github "alfred", "1.4.0"
 github "tmux", "1.0.2"
 github "evernote", "2.0.4"
 github "java", "1.8.2"
+github "chrome", "1.2.0"
 
 

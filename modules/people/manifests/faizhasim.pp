@@ -5,7 +5,6 @@ class people::faizhasim {
   include alfred
   include tmux
   include evernote
-  include couchdbx
   include java
 
   include iterm2::stable
