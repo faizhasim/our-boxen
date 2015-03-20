@@ -60,3 +60,9 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "ohmyzsh",      "1.0.0", :repo => "erivello/puppet-ohmyzsh"
+github "dropbox", "1.4.1"
+github "hipchat", "1.1.3"
+
+
