@@ -63,3 +63,6 @@ github "xquartz",     "1.2.1"
 
 github "ohmyzsh",      "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 github "dropbox", "1.4.1"
+github "hipchat", "1.1.3"
+
+
