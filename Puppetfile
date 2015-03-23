@@ -39,7 +39,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "brewcask",    "0.0.6"
-github "dnsmasq",     "2.0.1"
+github "dnsmasq",     "2.0.9", :repo => "bd808/puppet-dnsmasq"
 github "foreman",     "1.2.0"
 github "gcc",         "2.2.0"
 github "git",         "2.7.5"
@@ -73,11 +73,18 @@ github "chrome", "1.2.0"
 github "firefox", "1.2.3"
 github "gpgtools", "1.0.4"
 github "intellij", "1.5.1"
-github "keepassx", "1.0.0"
 github "sublime_text", "1.1.0"
 github "spotify", "1.0.2"
 github "skype", "1.1.0"
 github "osx", "2.8.0"
 github "xpdf", "1.0.1"
 github "tunnelblick", "1.0.7"
+github "imagemagick", "1.3.0"
+github "slate", "1.0.1"
+github "vlc", "1.1.0"
+github "wget", "1.0.1"
+github "cord", "1.0.0"
+github "vcsrepo", "1.2.0", :repo => "puppetlabs/puppetlabs-vcsrepo"
+
+
 

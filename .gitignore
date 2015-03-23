@@ -10,3 +10,5 @@
 /shared/*
 !/shared/README.md
 /vendor/gems/
+facts.d/common.yaml
+.idea/

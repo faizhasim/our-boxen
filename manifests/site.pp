@@ -55,12 +55,37 @@ node default {
   # core modules, needed for most things
   include dnsmasq
   include git
-  include hub
   include nginx
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
+  }
+
+  dnsmasq::address { 'docker':
+    ipaddr => "${ip_docker}",
+    ensure => present,
+  }
+
+  host { 'docker':
+    ensure => present,
+    comment => 'Fixed IP from boot2docker ip',
+    ip => "${ip_docker}",
+  }
+
+  host { 'kaishin':
+    ensure => present,
+    ip => "${ip_kaishin}",
+  }
+
+  host { 'yardrat':
+    ensure => present,
+    ip => "${ip_yardrat}",
+  }
+
+  host { 'vegeta':
+    ensure => present,
+    ip => "${ip_vegeta}",
   }
 
   # node versions
@@ -75,7 +100,9 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'git',
+      'zsh-completions'
     ]:
   }
 

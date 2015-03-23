@@ -8,12 +8,16 @@ class people::faizhasim {
   include java
   include chrome
   include firefox
-  include keepassx
   include sublime_text
   include spotify
   include skype
   include xpdf
   include tunnelblick
+  include imagemagick
+  include slate
+  include vlc
+  include wget
+  include cord
 
   include iterm2::stable
   include iterm2::colors::solarized_dark
@@ -28,7 +32,7 @@ class people::faizhasim {
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
-  
+
   osx::recovery_message { 'If this Mac is found, please contact faizhasim@gmail.com': }
   
   include osx::global::disable_key_press_and_hold
@@ -49,21 +53,12 @@ class people::faizhasim {
     position => 'left',
   }
 
- 
-#  include emacs   # requires emacs module in Puppetfile
-#  include sparrow # requires sparrow module in Puppetfile
-#
-#  $home     = "/Users/${::boxen_user}"
-#  $my       = "${home}/my"
-#  $dotfiles = "${my}/dotfiles"
-#
-#  file { $my:
-#    ensure  => directory
-#  }
-#
-#  repository { $dotfiles:
-#    source  => 'jbarnette/dotfiles',
-#    require => File[$my]
-#  }
+  vcsrepo { "/Users/faizhasim/dev/github/categorize-inbox-to-fs":
+    ensure => present,
+    provider => git,
+    source => "git@github.com:faizhasim/categorize-inbox-to-fs.git",
+    user => 'faizhasim',
+  }
+
 }
 
