@@ -102,7 +102,8 @@ node default {
       'findutils',
       'gnu-tar',
       'git',
-      'zsh-completions'
+      'zsh-completions',
+      'docker-compose'
     ]:
   }
 
