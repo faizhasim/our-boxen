@@ -103,7 +103,8 @@ node default {
       'gnu-tar',
       'git',
       'zsh-completions',
-      'docker-compose'
+      'docker-compose',
+      'scala'
     ]:
   }
 
