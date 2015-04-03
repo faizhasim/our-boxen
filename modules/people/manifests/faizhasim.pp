@@ -28,7 +28,40 @@ class people::faizhasim {
     edition => 'ultimate',
     version => '14.0.3'
   }
-  
+
+  class { 'ruby::global':
+      version => "2.1.2",
+  }
+
+  ruby_gem { 'bundler':
+    gem          => 'bundler',
+    version      => '~> 1.0',
+    ruby_version => '*',
+  }
+
+  ruby_gem { 'tugboat':
+    gem          => 'tugboat',
+    version      => '~> 0.2',
+    ruby_version => '*',
+  }
+
+  class { 'nodejs::global': version => 'v0.12.0' }
+  nodejs::module { 'bower': 
+    node_version => 'v0.12.0'
+  }
+
+  nodejs::module { 'lineman': 
+    node_version => 'v0.12.0'
+  }
+
+  nodejs::module { 'gulp': 
+    node_version => 'v0.12.0'
+  }
+
+  nodejs::module { 'grunt': 
+    node_version => 'v0.12.0'
+  }
+
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }

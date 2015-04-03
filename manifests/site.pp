@@ -89,11 +89,10 @@ node default {
   }
 
   # node versions
-  nodejs::version { 'v0.12.0': }
+  # nodejs::version { 'v0.12.0': }
 
   # default ruby versions
   ruby::version { '1.9.3': }
-  ruby::version { '2.1.2': }
 
   # common, useful packages
   package {
@@ -104,7 +103,10 @@ node default {
       'git',
       'zsh-completions',
       'docker-compose',
-      'scala'
+      'scala',
+      # 'Caskroom/cask/wkhtmltopdf',
+      'maven',
+      'zinc'
     ]:
   }
 
