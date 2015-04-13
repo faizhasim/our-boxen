@@ -106,7 +106,9 @@ node default {
       'scala',
       # 'Caskroom/cask/wkhtmltopdf',
       'maven',
-      'zinc'
+      'zinc',
+      'mysql',
+      'poppler'
     ]:
   }
 
