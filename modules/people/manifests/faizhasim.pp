@@ -24,11 +24,6 @@ class people::faizhasim {
   
   class { 'gpgtools': }
 
-  class { 'intellij':
-    edition => 'ultimate',
-    version => '14.0.3'
-  }
-
   class { 'ruby::global':
       version => "2.1.2",
   }
@@ -43,23 +38,6 @@ class people::faizhasim {
     gem          => 'tugboat',
     version      => '~> 0.2',
     ruby_version => '*',
-  }
-
-  class { 'nodejs::global': version => 'v0.12.0' }
-  nodejs::module { 'bower': 
-    node_version => 'v0.12.0'
-  }
-
-  nodejs::module { 'lineman': 
-    node_version => 'v0.12.0'
-  }
-
-  nodejs::module { 'gulp': 
-    node_version => 'v0.12.0'
-  }
-
-  nodejs::module { 'grunt': 
-    node_version => 'v0.12.0'
   }
 
   sublime_text::package { 'Emmet':

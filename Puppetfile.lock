@@ -114,6 +114,11 @@ GITHUBTARBALL
     nodejs (4.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-nvm
+  specs:
+    nvm (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
@@ -249,6 +254,7 @@ DEPENDENCIES
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
+  nvm (= 1.0.0)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 2.8.0)
