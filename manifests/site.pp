@@ -105,7 +105,6 @@ node default {
       'gnu-tar',
       'git',
       'zsh-completions',
-      'docker-compose',
       'scala',
       # 'Caskroom/cask/wkhtmltopdf',
       'maven',
