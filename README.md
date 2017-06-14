@@ -31,7 +31,7 @@ and detect most of these and tell you anyway):
 
 ### Dependencies
 
-**Install the Xcode Command Lines Tools and/or full Xcode.**
+**Install the Xcode Command Line Tools and/or full Xcode.**
 This will grant you the most predictable behavior in building apps like
 MacVim.
 
@@ -126,19 +126,19 @@ If that runs cleanly, you're in good shape.
 This template project provides the following by default:
 
 * Homebrew
+* Homebrew-Cask
 * Git
 * Hub
 * dnsmasq w/ .dev resolver for localhost
 * rbenv
 * Full Disk Encryption requirement
-* Node.js 0.6
 * Node.js 0.8
 * Node.js 0.10
+* Node.js 0.12
 * Ruby 1.9.3
 * Ruby 2.0.0
-* Ruby 2.1.0
-* Ruby 2.1.1
-* Ruby 2.1.2
+* Ruby 2.1.8
+* Ruby 2.2.4
 * ack
 * Findutils
 * GNU tar
@@ -302,7 +302,7 @@ fork.
 You'll still be the maintainer, you'll still own the issues and PRs.
 It'll just be listed under the boxen org so folks can find it more easily.
 
-##upgrading boxen
+## upgrading boxen
 See [FAQ-Upgrading](https://github.com/boxen/our-boxen/blob/master/docs/faq.md#q-how-do-you-upgrade-your-boxen-from-the-public-our-boxen).
 
 ## Integrating with Github Enterprise

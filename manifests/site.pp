@@ -62,37 +62,40 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  dnsmasq::address { 'docker':
-    ipaddr => "${ip_docker}",
-    ensure => present,
-  }
+  # dnsmasq::address { 'docker':
+  #   ipaddr => "${ip_docker}",
+  #   ensure => present,
+  # }
 
-  host { 'docker':
-    ensure => present,
-    comment => 'Fixed IP from boot2docker ip',
-    ip => "${ip_docker}",
-  }
+  # host { 'docker':
+  #   ensure => present,
+  #   comment => 'Fixed IP from boot2docker ip',
+  #   ip => "${ip_docker}",
+  # }
 
-  host { 'kaishin':
-    ensure => present,
-    ip => "${ip_kaishin}",
-  }
-
-  host { 'yardrat':
-    ensure => present,
-    ip => "${ip_yardrat}",
-  }
-
-  host { 'vegeta':
-    ensure => present,
-    ip => "${ip_vegeta}",
-  }
+  # host { 'kaishin':
+  #   ensure => present,
+  #   ip => "${ip_kaishin}",
+  # }
+  #
+  # host { 'yardrat':
+  #   ensure => present,
+  #   ip => "${ip_yardrat}",
+  # }
+  #
+  # host { 'vegeta':
+  #   ensure => present,
+  #   ip => "${ip_vegeta}",
+  # }
 
   # node versions
   # nodejs::version { 'v0.12.0': }
 
   # default ruby versions
   ruby::version { '1.9.3': }
+  ruby::version { '2.0.0': }
+  ruby::version { '2.1.8': }
+  ruby::version { '2.2.4': }
 
   # common, useful packages
   package {
